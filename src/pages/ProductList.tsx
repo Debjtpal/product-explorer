@@ -8,7 +8,7 @@ export function ProductList() {
   const [selectedCategory, setSelectedCategory] = useState('All categories');
 
   useEffect(() => {
-    document.title = 'Products | Field & Form';
+    document.title = 'Products';
   }, []);
 
   const categories = useMemo(
@@ -32,39 +32,23 @@ export function ProductList() {
     <main className="page-shell">
       <header className="site-header">
         <Link className="brand" to="/products">
-          <span className="brand-mark">f.</span> field & form
+          Products
         </Link>
-        <span className="header-note">Considered goods for everyday living</span>
       </header>
-      <section className="hero">
-        <p className="eyebrow">THE EVERYDAY EDIT</p>
-        <h1>
-          Good things,
-          <br />
-          <em>well chosen.</em>
-        </h1>
-        <p className="hero-copy">
-          A collection of useful, beautiful things made to make the everyday a little better.
-        </p>
-      </section>
       <section className="catalog" aria-labelledby="catalog-heading">
         <div className="catalog-heading">
-          <div>
-            <p className="eyebrow">THE COLLECTION</p>
-            <h2 id="catalog-heading">Find your next favorite</h2>
-          </div>
+          <h1 id="catalog-heading">Product catalog</h1>
           <span className="result-count">
             {filteredProducts.length} {filteredProducts.length === 1 ? 'item' : 'items'}
           </span>
         </div>
         <div className="filters">
           <label className="search-field">
-            <span aria-hidden="true">⌕</span>
             <input
               type="search"
               value={searchText}
               onChange={handleSearch}
-              placeholder="Search products..."
+              placeholder="Search products"
               aria-label="Search products by name"
             />
           </label>
@@ -87,16 +71,10 @@ export function ProductList() {
           </div>
         ) : (
           <div className="empty-state">
-            <span aria-hidden="true">⌕</span>
             <h3>No products found</h3>
-            <p>Try another search or choose a different category.</p>
           </div>
         )}
       </section>
-      <footer className="site-footer">
-        <span>FIELD & FORM</span>
-        <span>Useful things. Made to last.</span>
-      </footer>
     </main>
   );
 }

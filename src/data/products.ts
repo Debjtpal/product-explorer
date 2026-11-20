@@ -4,7 +4,7 @@ export type Product = {
   category: string;
   price: number;
   description: string;
-  icon: string;
+  image: string;
 };
 
 export const products: Product[] = [
@@ -14,7 +14,7 @@ export const products: Product[] = [
     category: 'Audio',
     price: 89.99,
     description: 'Rich, balanced sound and a comfortable fit for long listening sessions.',
-    icon: '🎧',
+    image: '/headphones.jpg',
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ export const products: Product[] = [
     category: 'Audio',
     price: 59.5,
     description: 'A compact wireless speaker made for music at home or on the go.',
-    icon: '🔊',
+    image: '/speaker.jpg',
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ export const products: Product[] = [
     category: 'Accessories',
     price: 74,
     description: 'A durable, thoughtfully organized backpack for work and weekends.',
-    icon: '🎒',
+    image: '/backpack.jpg',
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ export const products: Product[] = [
     category: 'Home',
     price: 42.99,
     description: 'Warm, adjustable light with a simple ceramic finish for your desk.',
-    icon: '💡',
+    image: '/lamp.jpg',
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ export const products: Product[] = [
     category: 'Accessories',
     price: 28,
     description: 'Keep your drink at the right temperature throughout the day.',
-    icon: '🧴',
+    image: '/bottle.jpg',
   },
   {
     id: 6,
@@ -54,7 +54,7 @@ export const products: Product[] = [
     category: 'Home',
     price: 65,
     description: 'A soft, breathable throw that brings a relaxed feel to any room.',
-    icon: '🧶',
+    image: '/throw.jpg',
   },
   {
     id: 7,
@@ -62,7 +62,7 @@ export const products: Product[] = [
     category: 'Tech',
     price: 99,
     description: 'A slim wireless keyboard with a satisfying, quiet typing feel.',
-    icon: '⌨️',
+    image: '/keyboard.jpg',
   },
   {
     id: 8,
@@ -70,6 +70,6 @@ export const products: Product[] = [
     category: 'Tech',
     price: 149.99,
     description: 'A versatile everyday watch for activity tracking and notifications.',
-    icon: '⌚',
+    image: '/watch.jpg',
   },
 ];

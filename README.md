@@ -28,4 +28,7 @@ The app runs at [http://localhost:3000](http://localhost:3000).
 
 Product data is stored locally in the app; no API keys or environment variables are required.
 # product-explorer
-# product-explorer
+# product-
+
+Screenshots
+![Main Page](MainPage.png) ![Keyboard](KeyboardProduct.png) ![Headphone](HeadphoneProduct.png) ![Speaker](SpeakerProduct.png)

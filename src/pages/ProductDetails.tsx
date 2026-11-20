@@ -7,26 +7,23 @@ export function ProductDetails() {
   const product = products.find((item) => item.id === Number(id));
 
   useEffect(() => {
-    document.title = product
-      ? `${product.name} | Field & Form`
-      : 'Product not found | Field & Form';
+    document.title = product ? product.name : 'Product not found';
   }, [product]);
 
   return (
     <main className="page-shell detail-shell">
       <header className="site-header">
         <Link className="brand" to="/products">
-          <span className="brand-mark">f.</span> field & form
+          Products
         </Link>
-        <span className="header-note">Considered goods for everyday living</span>
       </header>
       <Link className="back-link" to="/products">
-        ← Back to the collection
+        Back to products
       </Link>
       {product ? (
         <article className="detail-card">
-          <div className="detail-art" aria-hidden="true">
-            <span>{product.icon}</span>
+          <div className="detail-art">
+            <img src={product.image} alt={product.name} />
           </div>
           <div className="detail-copy">
             <p className="eyebrow">{product.category}</p>
@@ -34,25 +31,18 @@ export function ProductDetails() {
             <p className="detail-description">{product.description}</p>
             <p className="detail-price">${product.price.toFixed(2)}</p>
             <Link className="button-link" to="/products">
-              Explore the collection
+              Back to products
             </Link>
           </div>
         </article>
       ) : (
         <section className="not-found">
-          <span aria-hidden="true">✳</span>
-          <p className="eyebrow">A LITTLE MISSING</p>
-          <h1>We couldn't find that one.</h1>
-          <p>This product may have moved on to a new home.</p>
+          <h1>Product not found</h1>
           <Link className="button-link" to="/products">
-            Browse all products
+            View products
           </Link>
         </section>
       )}
-      <footer className="site-footer">
-        <span>FIELD & FORM</span>
-        <span>Useful things. Made to last.</span>
-      </footer>
     </main>
   );
 }
