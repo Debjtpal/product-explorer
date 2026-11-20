@@ -1,6 +1,5 @@
 # Product Explorer
-
-A responsive product catalog built with React, TypeScript, and Create React App. Browse a curated collection, search by product name, filter by category, and open a product page for more details.
+Typescript App
 
 ## Getting started
 
@@ -27,8 +26,6 @@ The app runs at [http://localhost:3000](http://localhost:3000).
 - `src/components/ProductCard.tsx` — product card component.
 
 Product data is stored locally in the app; no API keys or environment variables are required.
-# product-explorer
-# product-
 
 Screenshots
 ![Main Page](MainPage.png) ![Keyboard](KeyboardProduct.png) ![Headphone](HeadphoneProduct.png) ![Speaker](SpeakerProduct.png)
